@@ -1,0 +1,103 @@
+.betting_table {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(220, 220, 220);
+}
+
+.bet_head {
+    font-size: clamp(30px, 5vw, 80px);
+}
+
+.bet_head img {
+    position: absolute;
+    top: 1%;
+    width: 22%;
+    height: auto;
+    opacity: 0;
+    filter: drop-shadow(0px 0px 5px rgb(7, 125, 72));
+    transition: opacity 0.5s ease-out;
+}
+
+.bet_head img.show {
+    opacity: 1;
+}
+
+.bet_body {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.24);
+    margin-bottom: 8px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    font-size: clamp(10px, 3vw, 40px);
+    transition: color 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.bet_body_able {
+    pointer-events: auto;
+    color: rgb(235, 228, 189);
+    box-shadow: 0 0 3px 2px #e0cd74;
+}
+
+.bet_body_able:hover {
+    color: white;
+    box-shadow: 0 0 5px 3px;
+    transition: color 0s, box-shadow 0s;
+}
+
+.bet_body.bet_body_disable {
+    pointer-events: none;
+    color: rgba(119, 119, 119, 0.7);
+    box-shadow: 0px 0px 3px #444;
+}
+
+.bet_body.bet_win {
+    color: rgba(255, 235, 20, 0.8);
+    box-shadow: 0 0 8px 4px rgba(255, 217, 0, 0.735);
+}
+
+.bet_body.bet_loss {
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 3px 2px #000000b0;
+}
+
+.left {
+    z-index: 1;
+    margin-left: 10px;
+    width: 180px;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.right {
+    z-index: 1;
+    position: absolute;
+    right: 7px;
+    top: 0;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.betChipSlot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.betChipExample {
+    position: absolute;
+    height: 100%;
+    right: 2px;
+    object-fit: contain;
+    transition: 0.4 opacity ease;
+    opacity: 0;
+}

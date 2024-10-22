@@ -1,0 +1,38 @@
+.btn_next {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.btn_next .button {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    top: 15px;
+    padding: 0;
+    margin: 10px 20px 10px 0;
+    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(20px, 6vw, 75px);
+    text-decoration: underline;
+    text-align: center;
+    line-height: 90px;
+    color: rgb(220, 220, 220);
+    border-radius: 5px;
+    transition: all 0.2s;
+    background: #007bff;
+    box-shadow: 0px 10px 0px 0px #4b0082;
+}
+
+.button.btnDisable {
+    pointer-events: none;
+    background: #002baf;
+    box-shadow: 0px 10px 0px 0px #2b0062;
+}
+
+.button:hover {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 0px 0px #4b0082;
+}
